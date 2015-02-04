@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="react-with-addons-0.12.2.js"></script>
+<link rel="stylesheet" href="index.css" type="text/css" />
+<meta charset="utf-8">
+<title>React Consume Element Demo</title>
+</head>
+
+<body>
+
+<h1 id="consume-h1">This page is totally a React app</h1>
+
+<h2 id="consume-h2">Open up the dev tools and look at all the data-reactid</h2>
+
+<table id="consume-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>Yellow</td>
+    </tr>
+    <tr>
+      <td>Grape</td>
+      <td>Purple</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="plain-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>Yellow</td>
+    </tr>
+    <tr>
+      <td>Grape</td>
+      <td>Purple</td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="index.js"></script>
+
+<script charset="utf-8">
+consumeElement(document.getElementById('consume-h1'));
+consumeElement(document.getElementById('consume-h2'));
+consumeElement(document.getElementById('consume-table'));
+</script>
+
+</body>
+
+</html>
